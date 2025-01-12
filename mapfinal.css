@@ -402,10 +402,10 @@ button {
     overflow: hidden;
     width: 300px;
     height: 400px;
-    background-image: url("/images/destination.png");
+    background-image: url("/img/direction.png");
     background-repeat: no-repeat;
-    background-size: 400px;
-    background-position: center;
+    background-size: 300px;
+    background-position: top;
     margin-bottom: 10px;
   }
   .text_map {
