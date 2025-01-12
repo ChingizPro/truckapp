@@ -402,10 +402,10 @@ button {
     overflow: hidden;
     width: 300px;
     height: 400px;
-    background-image: url("https://www.pngitem.com/pimgs/m/235-2358328_road-map-png-road-map-icon-png-transparent.png");
+    /* background-image: url("https://www.pngitem.com/pimgs/m/235-2358328_road-map-png-road-map-icon-png-transparent.png");
     background-repeat: no-repeat;
     background-size: 400px;
-    background-position: center ;
+    background-position: center ; */
     margin-bottom: 10px;
   }
   .text_map {

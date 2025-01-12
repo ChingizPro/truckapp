@@ -402,10 +402,10 @@ button {
     overflow: hidden;
     width: 300px;
     height: 350px;
-    background-image: url("https://images.template.net/85248/free-flat-map-illustration-ffl5r.jpg");
+    /* background-image: url("https://images.template.net/85248/free-flat-map-illustration-ffl5r.jpg");
     background-repeat: no-repeat;
     background-size: 425px;
-    background-position: center;
+    background-position: center; */
     margin-bottom: 10px;
   }
   .text_map {
