@@ -402,7 +402,7 @@ button {
     overflow: hidden;
     width: 300px;
     height: 350px;
-    background-image: url("/img/orders.png");
+    background-image: url("../img/orders.png");
     background-repeat: no-repeat;
     background-size: 425px;
     background-position: center;
