@@ -34,16 +34,16 @@
                     <a href="#" class="menulink">Payment Methods</a>
                 </li>
                 <li class="menuitem">
-                    <a href="addcard.html" class="menulink">Add Card</a>
+                    <a href="#" class="menulink">Add Card</a>
                 </li>
                 <li class="menuitem">
                     <a href="#" class="menulink">History</a>
                 </li>
                 <li class="menuitem">
-                    <a href="settings.html" class="menulink">Settings</a>
+                    <a href="#" class="menulink">Settings</a>
                 </li>
                 <li class="menuitem">
-                    <a href="lang.html" class="menulink">Language</a>
+                    <a href="#" class="menulink">Language</a>
                 </li>
             </ul>
         </div>
@@ -52,19 +52,59 @@
             <button class="menubtn">
                 <i class="fa-solid fa-bars"></i>
             </button>
-            <a href="#" class="logo">Easy <span class="bold">Haul</span></a>
+            <a href="index.html" class="logo">Easy <span class="bold">Haul</span></a>
             <button class="infobtn">
                 <i class="fa-solid fa-exclamation"></i>
             </button>
         </header>
-        <div class="circle">
-            <img src="img/truck.png" alt="truck" class="pic">
-        </div>
-        <h2 class="welcome">Say goodbye to hauling headaches. Welcome to Easy Haul!</h2>
-        <div class="cusdri">
-            <a href="index2cus.html" class="link cus">Customers</a>
-            <a href="index2dri.html" class="link dri">Drivers</a>
-        </div>
+        <section class="card-page">
+          <div class="card-page__container">
+              <h1>Add a Card</h1>
+              <div class="card-form__group">
+                  <label class="card-form__label" for="cardNumber">Card Number:</label>
+                  <input class="card-form__input" type="text" id="cardNumber" placeholder="Enter card number">
+              </div>
+              <div class="card-form__group">
+                  <label class="card-form__label" for="cardDate">Expiration Date:</label>
+                  <input class="card-form__input" type="text" id="cardDate" placeholder="MM/YY">
+              </div>
+              <div class="card-form__group">
+                  <label class="card-form__label" for="cardholderName">Cardholder Name:</label>
+                  <input class="card-form__input" type="text" id="cardholderName" placeholder="Enter cardholder name">
+              </div>
+              <button class="card-form__button" onclick="addCard()">Add Card</button>
+  
+              <div id="cardContainer" style="margin-top: 20px;">
+                  <!-- Cards will be added here -->
+              </div>
+          </div>
+      </section>
+  
+      <script>
+          function addCard() {
+              const cardNumber = document.getElementById('cardNumber').value.trim();
+              const cardDate = document.getElementById('cardDate').value.trim();
+              const cardholderName = document.getElementById('cardholderName').value.trim();
+              const cardContainer = document.getElementById('cardContainer');
+  
+              if (cardNumber && cardDate && cardholderName) {
+                  const card = document.createElement('div');
+                  card.className = 'card-list__item';
+                  card.innerHTML = `
+                      <p><strong>Card Number:</strong> ${cardNumber}</p>
+                      <p><strong>Expiration Date:</strong> ${cardDate}</p>
+                      <p><strong>Cardholder Name:</strong> ${cardholderName}</p>
+                  `;
+                  cardContainer.appendChild(card);
+  
+                  document.getElementById('cardNumber').value = '';
+                  document.getElementById('cardDate').value = '';
+                  document.getElementById('cardholderName').value = '';
+              } else {
+                  alert('Please fill out all fields');
+              }
+          }
+      </script>
     </div>
     <script src="main.js"></script>
 </body>

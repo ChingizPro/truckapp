@@ -229,3 +229,53 @@ button {
 .settings-list .langs__list-link {
     text-align: left;
 }
+
+.card-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    color: black;
+}
+.card-page__container {
+    width: 100%;
+    margin: auto;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.card-form__group {
+    margin-bottom: 15px;
+}
+.card-form__label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+.card-form__input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.card-form__button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+.card-form__button:hover {
+    background-color: #0056b3;
+}
+.card-list__item {
+    background: #f9f9f9;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
