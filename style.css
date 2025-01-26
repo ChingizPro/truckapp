@@ -279,3 +279,89 @@ button {
     margin-bottom: 10px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
+.payment-page {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+    color: black;
+}
+.payment-page__container {
+    width: 100%;
+    max-width: 600px;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.payment-page__header {
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: bold;
+}
+.payment-methods__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.payment-methods__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #f9f9f9;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.payment-methods__name {
+    font-size: 16px;
+    font-weight: bold;
+}
+.payment-methods__actions {
+    display: flex;
+    gap: 10px;
+}
+.payment-methods__button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+.payment-methods__button--delete {
+    background-color: #dc3545;
+}
+.payment-methods__button:hover {
+    opacity: 0.9;
+}
+.payment-form__group {
+    margin-bottom: 15px;
+}
+.payment-form__label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+.payment-form__select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.payment-form__button {
+    margin-top: 10px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+.payment-form__button:hover {
+    background-color: #0056b3;
+}
